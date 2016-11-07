@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8793B00CFB3465E659B40B7 /* Pods_Schedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264820975CC12B7753683EA6 /* Pods_Schedule.framework */; };
 		CFCAF09C1DD037EA00D695D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAF09B1DD037EA00D695D2 /* AppDelegate.swift */; };
 		CFCAF09E1DD037EA00D695D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCAF09D1DD037EA00D695D2 /* ViewController.swift */; };
 		CFCAF0A11DD037EA00D695D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAF09F1DD037EA00D695D2 /* Main.storyboard */; };
@@ -14,7 +15,26 @@
 		CFCAF0A61DD037EA00D695D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCAF0A41DD037EA00D695D2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CFCAF0C71DD043DA00D695D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCAF0C21DD043DA00D695D2 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5115D1A9E6B3D00147676;
+			remoteInfo = RCTImage;
+		};
+		CFCAF0C91DD043DA00D695D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFCAF0C21DD043DA00D695D2 /* RCTImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A283A1D9B042B00D4039D;
+			remoteInfo = "RCTImage-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		264820975CC12B7753683EA6 /* Pods_Schedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE126E874F0888737459BD65 /* Pods-Schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Schedule/Pods-Schedule.debug.xcconfig"; sourceTree = "<group>"; };
 		CFCAF0981DD037EA00D695D2 /* Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCAF09B1DD037EA00D695D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFCAF09D1DD037EA00D695D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,8 @@
 		CFCAF0A21DD037EA00D695D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCAF0A51DD037EA00D695D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCAF0A71DD037EA00D695D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCAF0C21DD043DA00D695D2 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
+		E805979C53471D4ED17ADA29 /* Pods-Schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schedule.release.xcconfig"; path = "Pods/Target Support Files/Pods-Schedule/Pods-Schedule.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8793B00CFB3465E659B40B7 /* Pods_Schedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B924B6845E6BF8EFA1C87F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE126E874F0888737459BD65 /* Pods-Schedule.debug.xcconfig */,
+				E805979C53471D4ED17ADA29 /* Pods-Schedule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFCAF08F1DD037EA00D695D2 = {
 			isa = PBXGroup;
 			children = (
 				CFCAF09A1DD037EA00D695D2 /* Schedule */,
 				CFCAF0991DD037EA00D695D2 /* Products */,
+				7B924B6845E6BF8EFA1C87F5 /* Pods */,
+				E74F9F3B5C1289044D4D5D77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +98,24 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		CFCAF0C31DD043DA00D695D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFCAF0C81DD043DA00D695D2 /* libRCTImage.a */,
+				CFCAF0CA1DD043DA00D695D2 /* libRCTImage-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E74F9F3B5C1289044D4D5D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCAF0C21DD043DA00D695D2 /* RCTImage.xcodeproj */,
+				264820975CC12B7753683EA6 /* Pods_Schedule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFCAF0AA1DD037EA00D695D2 /* Build configuration list for PBXNativeTarget "Schedule" */;
 			buildPhases = (
+				664BCFEC5D0CF0F474C3EE4F /* [CP] Check Pods Manifest.lock */,
 				CFCAF0941DD037EA00D695D2 /* Sources */,
 				CFCAF0951DD037EA00D695D2 /* Frameworks */,
 				CFCAF0961DD037EA00D695D2 /* Resources */,
+				557B4C279F33D4CAEBC8FCCC /* [CP] Embed Pods Frameworks */,
+				DE11B174A77749912ADFA497 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,12 +167,35 @@
 			mainGroup = CFCAF08F1DD037EA00D695D2;
 			productRefGroup = CFCAF0991DD037EA00D695D2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CFCAF0C31DD043DA00D695D2 /* Products */;
+					ProjectRef = CFCAF0C21DD043DA00D695D2 /* RCTImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CFCAF0971DD037EA00D695D2 /* Schedule */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CFCAF0C81DD043DA00D695D2 /* libRCTImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTImage.a;
+			remoteRef = CFCAF0C71DD043DA00D695D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CFCAF0CA1DD043DA00D695D2 /* libRCTImage-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTImage-tvOS.a";
+			remoteRef = CFCAF0C91DD043DA00D695D2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CFCAF0961DD037EA00D695D2 /* Resources */ = {
@@ -131,6 +209,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		557B4C279F33D4CAEBC8FCCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Schedule/Pods-Schedule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		664BCFEC5D0CF0F474C3EE4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE11B174A77749912ADFA497 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Schedule/Pods-Schedule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFCAF0941DD037EA00D695D2 /* Sources */ = {
@@ -259,10 +385,12 @@
 		};
 		CFCAF0AB1DD037EA00D695D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE126E874F0888737459BD65 /* Pods-Schedule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5BSAGANVU;
 				INFOPLIST_FILE = Schedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.Schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +400,12 @@
 		};
 		CFCAF0AC1DD037EA00D695D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E805979C53471D4ED17ADA29 /* Pods-Schedule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5BSAGANVU;
 				INFOPLIST_FILE = Schedule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.harvard.Schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +432,7 @@
 				CFCAF0AC1DD037EA00D695D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
